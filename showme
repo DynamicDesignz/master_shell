@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo " Show "
+sudo apt-cache show < /var/log/search

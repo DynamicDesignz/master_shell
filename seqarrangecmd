@@ -1,0 +1,3 @@
+for for seq in [a-z]
+do $seqgrep then 
+done

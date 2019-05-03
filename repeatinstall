@@ -1,0 +1,14 @@
+function readme () {
+  echo -n "Program: "
+}
+
+function search () {
+  sudo apt-cache search
+}
+
+function install() {
+  sudo apt-get install 
+}
+
+search $dump 
+install $dump

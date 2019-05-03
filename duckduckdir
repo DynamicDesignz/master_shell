@@ -1,0 +1,4 @@
+#!/bin/bash
+echo -n "duckduckdir: "
+read duck
+duc ls -Fg $duck > /var/log/duckduckdir

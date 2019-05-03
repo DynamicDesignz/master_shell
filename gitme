@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo -n "GitMe: "
+read gitdump
+git clone https://github.com/$gitdump ~/GitHub/$gitdump > /var/log/git
+ls -1 ~/GitHub
+sleep 2 
+echo -n "Do You Want To Move $gitdump To /Opt ?"
+cp -R ~/GitHub/$gitdump /opt
+echo -n "Do You Want To Move All Scripts To /Usr/Local/Bin ?"
+cp -R ~/GitHub/*.sh

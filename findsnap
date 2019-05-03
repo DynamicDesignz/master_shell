@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#Find and install every package.
+
+echo -n "Find Snap: "
+read sfind
+snap find "$sfind" | awk ' { print $1 } ' | while read sfound; do snap install $sfound; done
+
+sleep 10
+
+sudo snap install $sfind

@@ -1,0 +1,24 @@
+echo "====================================================================="
+echo "			ARMING WIRELESS SYSTEM			"
+echo "====================================================================="
+echo "Entering Armed Monitor Mode!" | echo "Bringing Down Network Interfaces"
+echo""
+echo""
+echo "Armed Interface Name: " | sudo iwconfig | echo "is the name to be set..."
+echo ""
+echo ""
+echo -n "Enable Monitor Mode On: "
+read IFACE
+
+echo "sudo ifconfig $IFACE down" | sudo ifconfig $IFACE down
+echo "sudo iwconfig $IFACE mode monitor" | sudo iwconfig $IFACE mode monitor
+echo "sudo ifconfig $IFACE up" sudo ifconfig $IFACE up
+
+
+echo "=========================="
+echo "EXITING ARMED MONITOR MODE!"
+echo "=========================="	
+
+sudo ifconfig $IFACE down
+sudo iwconfig $IFACE mode monitor
+sudo ifconfig $IFACE up

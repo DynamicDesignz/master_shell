@@ -1,0 +1,17 @@
+#Recursively print inputed url list then curl list into one page 
+
+for url in $(cat list_of_urls.txt); do
+  curl "$url" >> everywebpage_combined.html/.pdf
+done
+
+
+for url in $(cat list_of_urls.txt); do
+  wget "$url" >> everywebpage_combined.html/.pdf
+done
+
+(A-Z)get?
+for x in a b c d e f g h i j k l m n o p q r s t u v w x y z
+do
+echo $xget
+
+
