@@ -3,27 +3,58 @@ List of Ubuntu-Based Shell Scripts that I have written in Ubuntu Linux. Placed i
 
     /usr/local/bin
 
-add2archive.sh                   grepnsend              recog_match
-add-user-to-group.sh             htmldiff               recog_verify
-aireplay                         hydra-brute            redcarpet
-apacheenablevirtualhost          hydra-brute-proxy      redirectip
-apachelog                        hydra-exe              remove
-apacheport                       hydra-ftp              reportx
-apacherst                        hydra-ftp.bash         reroute
-apachestat                       hydra-gmail            reversessh
-apachevirt                       hydra-live             rmlock
-arm                              hydra-ssh              rmtrash
-aruba                            hydraweb               rspec
-authlog                          hydra-www              rubydns-check
-autoremove                       hyperfox               rubyinstall
-bettercap                        installmsf             runpfdoc
-binbackup                        interceptord.py        runwebmin
-blowoff                          jasmind.py             search
-bundle                           john-hydra             sendmailbackup
-bundler                          jsobfu                 sendmailinstall
-catchmail                        lampinstall            sendmailrst
-celery                           ldiff                  sendmailtest
-cftp                             mailcatcher            show
+add2archive.sh                   
+grepnsend   
+recog_match
+add-user-to-group.sh            
+htmldiff               
+recog_verify
+aireplay                         
+hydra-brute           
+redcarpet
+apacheenablevirtualhost         
+hydra-brute-proxy      redirectip
+apachelog                        
+hydra-exe              remove
+apacheport                       
+hydra-ftp             
+reportx
+apacherst                       
+hydra-ftp.bash         
+reroute
+apachestat                       
+hydra-gmail           
+reversessh
+apachevirt                      
+hydra-live             
+rmlock
+arm                              
+hydra-ssh              
+rmtrash
+aruba                           
+hydraweb              
+rspec
+authlog                          
+hydra-www              
+rubydns-check
+autoremove                       
+hyperfox               rubyinstall
+bettercap                       
+installmsf             runpfdoc
+binbackup                        
+interceptord.py        runwebmin
+blowoff                          
+jasmind.py             search
+bundle                          
+john-hydra             sendmailbackup
+bundler                          
+jsobfu                 sendmailinstall
+catchmail                        
+lampinstall            sendmailrst
+celery                          
+ldiff                  sendmailtest
+cftp                             
+mailcatcher            show
 chardetect                       maildev                spamrst
 checksysmail                     mailmail               spoofip
 chmac                            massemail              spoofIP
