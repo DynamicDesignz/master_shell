@@ -1,0 +1,8 @@
+#!/bin/bash
+echo "Bettercap UI"
+cd /usr/local/share/bettercap/ui
+sudo git clone https://github.com/bettercap/ui.git
+cd ~/ui
+make deps
+make build
+sudo make install

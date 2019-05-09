@@ -1,0 +1,10 @@
+#!/bin/bash
+
+sudo apt-get -y install gnome-session-flashback nautilus-scripts-manager synaptic apache2 mysql-server yakuake ftpd openssh-server nmap git python-pip hydra ettercap-text-only samba gimp  
+
+sudo apt-get update
+
+sudo chown jeremy:jeremy /opt 
+sudo chown jeremy:jeremy /var/www/html
+sudo chown jeremy:jeremy /usr/local/bin
+

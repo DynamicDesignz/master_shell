@@ -1,0 +1,23 @@
+#!/bin/bash
+
+sudo apt install apt-transport-https
+sudo -i
+echo "deb https://deb.torproject.org/torproject.org bionic main" >> /etc/apt/sources.list
+echo "deb-src https://deb.torproject.org/torproject.org bionic main" >> /etc/apt/sources.list 
+echo "deb tor://sdscoq7snqtznauu.onion/torproject.org bionic main" >> /etc/apt/sources.list
+exit
+
+curl https://deb.torproject.org/torproject.org/A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89.asc | gpg --import
+gpg --export A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89 | apt-key add -
+
+sudo apt install tor deb.torproject.org-keyring
+
+sudo apt install apt-transport-tor
+
+sudo apt-get update
+
+sudo apt-get install tor
+echo "======================================================="
+echo "Searching Tor Repos For Possible Packages To Install..."
+
+sudo apt-cache search tor

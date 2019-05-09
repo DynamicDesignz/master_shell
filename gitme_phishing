@@ -1,0 +1,33 @@
+#!/bin/bash
+
+#for i in 4 do git clone
+
+echo "High Profile Phishing Frameworks"
+git clone https://github.com/DynamicDesignz/gophish.git
+git clone https://github.com/DynamicDesignz/katphish-framework.git
+git clone https://github.com/Section9Labs/Cartero.git
+git clone https://github.com/DynamicDesignz/sociopath.git
+git clone https://github.com/DynamicDesignz/STP.git
+
+echo "SET...Social Engineering Toolkit"
+git clone https://github.com/DynamicDesignz/social-engineer-toolkit.git
+
+echo "New School Phishing Frameworks"
+git clone https://github.com/DynamicDesignz/Ninja-Phishing-Framework.git
+git clone https://github.com/DynamicDesignz/Dr0p1t-Framework.git
+git clone https://github.com/DynamicDesignz/HiddenEye.git
+git clone https://github.com/DynamicDesignz/nightmare.git
+git clone https://github.com/DynamicDesignz/blackeye.git
+git clone https://github.com/DynamicDesignz/dnstwist.git
+git clone https://github.com/DynamicDesignz/zarp.git
+git clone https://github.com/DynamicDesignz/ares.git
+git clone https://github.com/DynamicDesignz/ghost-phisher.git
+git clone https://github.com/DynamicDesignz/pompa.git
+git clone https://github.com/DynamicDesignz/BEWGor.git
+git clone https://github.com/DynamicDesignz/phishpoll.git
+
+git clone https://github.com/DynamicDesignz/social-engineering-toolkit-installer.git
+
+echo "Email Harvesting Tools"
+git clone https://github.com/DynamicDesignz/theHarvester.git
+

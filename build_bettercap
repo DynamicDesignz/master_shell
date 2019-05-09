@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo "Building Bettercap"
+
+sudo apt-get install build-essential libpcap-dev libusb-10-0-dev libnetfiler-queue-dev 
+
+go get github.com/bettercap/bettercap
+cd $GOPATH/src/github.com/bettercap/bettercap
+make build 
+sudo make install

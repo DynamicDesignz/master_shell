@@ -1,0 +1,26 @@
+#!/bin/bash 
+
+sudo apt-get install default-jre -y
+
+java -version
+
+sudo apt-get install apache2 mariadb-server -y
+
+sudo apt-get install php7.2 php7.2-mysql libapache2-mod-php7.2 -y
+
+sudo systemctl start apache2
+sudo systemctl enable apache2
+sudo systemctl start mysql
+sudo systemctl enable mariadb
+
+
+sudo mkdir /usr/local/apachegui
+sudo cd /usr/local/apachegui
+sudo wget https://excellmedia.dl.sourceforge.net/project/apachegui/1.12-Linux-Solaris-Mac/ApacheGUI-1.12.0.tar.gz
+
+sudo tar -xvzf ApacheGUI-1.12.0.tar.gz
+
+sudo cd ApacheGUI/bin
+sudo ./run.sh
+
+

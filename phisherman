@@ -1,0 +1,7 @@
+#!/bin/bash 
+
+cd /opt
+git clone https://github.com/FDX100/Phisher-man phisherman
+   cd phisherman
+   sudo python phisherman.py
+
