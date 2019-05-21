@@ -1,0 +1,5 @@
+#!/bin/bash
+cd /opt
+git clone https://github.com/m4ll0k/AutoNSE.git
+cd AutoNSE 
+bash autonse.sh

@@ -1,0 +1,35 @@
+#!/bin/bash
+
+
+cd /opt
+
+git clone https://github.com/ozzi-/tld_scanner.git
+
+git clone https://github.com/DynamicDesignz/DirtyENUM.git
+
+git clone https://github.com/zzztor/intelligence-wordlist-generator.git
+
+git clone https://github.com/egoconf/egoconf.git
+
+git clone https://github.com/ivan-bilan/author-profiling-pan-2016.git
+
+git clone https://github.com/sundowndev/PhoneInfoga.git
+
+git clone https://github.com/Srinivas11789/urlRecon.git
+
+git clone https://github.com/twelvesec/gasmask.git
+
+git clone https://github.com/willbengtson/Facebook-Cr4wl3r.git
+
+git clone https://github.com/SudhanshuC/Rapportive.git
+
+git clone https://github.com/v2-dev/awesome-social-engineering.git
+
+
+cd /var/www/html
+
+git clone https://github.com/humhub/humhub.git
+
+git clone https://github.com/DynamicDesignz/zenodo.git
+
+

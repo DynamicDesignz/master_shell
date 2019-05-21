@@ -1,0 +1,5 @@
+#!/bin/bash
+cd /opt
+git clone https://github.com/ZerBea/hcxdumptool.git
+cd /opt/hcxdumptool
+sudo make && sudo make install

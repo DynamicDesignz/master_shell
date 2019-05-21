@@ -1,0 +1,1 @@
+nmap -p 80 --script dns-brute.nse vulnweb.com

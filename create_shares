@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo -n "Create New Shares User: "
+read myusr
+sudo smbpasswd -a $myusr
+echo "Created $myusr network shares user!" 
+
+

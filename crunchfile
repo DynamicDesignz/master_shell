@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo  "				Crunch Password List 			"
+echo  " 								"
+echo  -n "   Crunch Passlists From File:  "
+
+read file
+crunch 5 6 AB –o $file

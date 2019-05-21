@@ -1,0 +1,1 @@
+nmap --script nmap-vulners -sV localhost

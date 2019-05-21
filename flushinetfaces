@@ -1,0 +1,15 @@
+#!/bin/bash
+
+echo
+echo "WARNING: DO NOT RUN THIS OVER SSH - CONNECTION WILL BE LOST!"
+echo
+echo "You Have One Minute To CTRL+D..."
+sleep 1
+
+echo "Flushing Wired Network Interface On enp3s0"
+
+ip addr flush enp3s0
+
+echo "Restarting Network Interfaces"
+
+sudo systemctl restart networking.service

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "Copy To VirtualFS: "
+read cpfs
+cp $cpfs /media/jeremy/VIRTUALFS/ 

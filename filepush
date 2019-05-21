@@ -1,0 +1,6 @@
+#!/bin/bash
+
+echo -n "FilePush: "
+read filepush
+cp $filepush /sftp:host=dynamicdomaincontrol.com,user=cljtxokryzqg/home/cljtxokryzqg/public_html/dynamicdomaincontrol.com/files
+echo "   Pushed $filepush to ftp://dynamicdomaincontrol.com/files   "

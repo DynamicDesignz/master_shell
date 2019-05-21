@@ -1,0 +1,15 @@
+#!/bin/bash
+
+cd /opt
+
+git clone https://github.com/wpscanteam/wpscan
+
+cd wpscan/
+
+bundle install && rake install
+
+wpscan --update
+
+echo "Welcome to WPScan!"
+
+

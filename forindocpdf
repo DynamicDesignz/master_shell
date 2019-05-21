@@ -1,0 +1,11 @@
+#!/bin/bash
+echo " USE AS TEMPLATE FOR STANDARD USER INPUT REDIRECTION STRUCTURE CLOSED LOOP" 
+echo "========================================================================"
+echo
+
+echo "for files in dir defined as *.html do lowriter --headless --convert-to pdf"
+
+for f in *.doc
+do
+lowriter --headless --convert-to pdf "$f"
+done

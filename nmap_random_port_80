@@ -1,0 +1,3 @@
+#!/bin/bash
+echo "Scan Random Set Of IP Addresses On Port 80"
+nmap -Pn -sS -p 80 -iR 0 --open

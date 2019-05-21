@@ -1,0 +1,5 @@
+#!/bin/bash
+echo -n "forge install: " | read forge
+
+sudo apt-get install $forge
+echo "implementation complete!"
