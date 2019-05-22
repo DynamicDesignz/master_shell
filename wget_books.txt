@@ -1,0 +1,30 @@
+wget http://www.mediafire.com/download/u2akquvibe6ia13/Hackers+High+School+13+Complete+Hacking+E-books.rar
+wget http://www.mediafire.com/download/u2akquvibe6ia13/Hackers+High+School+13+Complete+Hacking+E-books.rar
+wget http://www.mediafire.com/download/dyewn6f3r3olnuw/A+Beginners+Guide+To+Hacking+Computer+Systems.zip
+wget http://www.mediafire.com/download/c8ilcobmyiqooyp/Black+Book+of+Viruses+and+Hacking.zip
+wget http://www.mediafire.com/download/2sspb36u5gymd23/Secrets+of+Super+and+Professional+Hackers.zip
+wget http://www.mediafire.com/download/s3535s2yg1w26u7/Dangerours+Google+Hacking+Database+and+Attacks.zip
+wget http://www.mediafire.com/download/b4jmyl022rh48c0/Internet+Advanced+Denial+of+Service+%28DDOS%29+Attack.zip
+wget http://www.mediafire.com/download/8derf9dueyq64i5/Computer+Viruses%2C+Hacking+and+Malware+attacks+for+Dummies.zip
+
+wget http://www.mediafire.com/download/8derf9dueyq64i5/Computer+Viruses%2C+Hacking+and+Malware+attacks+for+Dummies.zip
+wget http://www.mediafire.com/download/j8cvosmvcb4vpw9/Vulnerability+Exploitation+%26+website+Hacking+for+Dummies.rar
+wget http://www.mediafire.com/download/c7b18vtpc77sysi/Web+App+Hacking+%28Hackers+Handbook%29.zip
+wget http://www.mediafire.com/download/dpysbzboord42lo/Hacking+attacks+and+Examples+Test.zip
+
+wget http://www.mediafire.com/download/da8nhq8oh5iddae/501+Website+Hacking+Secrets.zip
+wget http://www.mediafire.com/download/7tk860o8n777iqa/Internet+Security+Technology+and+Hacking.zip
+wget https://defcon.org/images/defcon-17/dc-17-presentations/defcon-17-joseph_mccray-adv_sql_injection.pdf
+wget https://www.owasp.org/images/d/d0/Web_Services_Hacking_and_Hardening.pdf
+wget https://www.defcon.org/images/defcon-11/dc-11-presentations/dc-11-Gentil/dc-11-gentil.pdf
+wget http://www.blackhat.com/presentations/bh-europe-07/Cerrudo/Whitepaper/bh-eu-07-cerrudo-WP-up.pdfwget http://www.binary-zone.com/course/BZ-Backtrack.usage.pdf
+wget http://www.objectif-securite.ch/research/xss_security_days.pdf
+wget http://www.foo.be/cours/dess-20122013/b/Eldad_Eilam-Reversing__Secrets_of_Reverse_Engineering-Wiley(2005).pdf
+wget http://cyber.law.harvard.edu/sites/cyber.law.harvard.edu/files/ComputerHacking.pdf
+wget https://media.blackhat.com/bh-dc-11/Grand/BlackHat_DC_2011_Grand-Workshop.pdf
+wget http://www.academia.edu/1153769/Hacking_into_computer_systems_-_a_beginners_guide
+wget http://www.t-gr.com/fotis/books/re.pdf
+wget http://blueinfy.com/wp/blindsql.pdf
+
+wget http://www.mediafire.com/download/34u3o5yp30k0cd9/ANKIT+FADIA.rar
+http://www.mediafire.com/view/pz3sbnp590bsfx3/Prophet-Hacker-Android-Hacking-Blog_Book.pdf

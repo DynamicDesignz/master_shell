@@ -1,0 +1,7 @@
+nautilus-scripts-manager
+nautilus-actions
+nautilus-admin
+nautilus-compare
+nautilus-data
+nautilus-open-terminal
+gnome-control-center
