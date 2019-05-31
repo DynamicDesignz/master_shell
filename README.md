@@ -3,14 +3,14 @@ List of Ubuntu-Based Shell Scripts that I have written in Ubuntu Linux. Placed i
 
     /usr/local/bin
 
-apacheenablevirtualhost	enable apache virtualhost with ane2mod
-apachelog	user interface to dump and show apache log
-apacheport	create apache report interface
-apacherst	apache restart command
-apachestat	show apache status
-apachevirt	create apache virtual host
-arm	chmod script user interface
-authlog	user interface to dump varlog/auth.log
+apacheenablevirtualhost	- enable apache virtualhost with ane2mod
+apachelog - user interface to dump and show apache log
+apacheport - create apache report interface
+apacherst - apache restart command
+apachestat - show apache status
+apachevirt - create apache virtual host
+arm	- chmod script user interface
+authlog	- user interface to dump varlog/auth.log
 autoremove	sudo apt-get autoremove
 bettercap	bettercap user interface for ettercap recreated package
 binbackup	backup your scripts directory containing
