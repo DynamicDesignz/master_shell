@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo -n "Enter URL: "
+read http
+youtube-dl --extract-audio --audio-format mp3 -o "%(title)s.%(ext)s" $http
