@@ -1,5 +1,8 @@
 #!/bin/bash
 
-echo -n "Enter URL: "
+while true; do 
+echo
+echo -n "Enter Youtube Playlist: "
 read http
-youtube-dl --extract-audio --audio-format mp3 -o "%(title)s.%(ext)s" $http
+youtube-dl --extract-audio --audio-format mp3 -o "%(title)s.%(ext)s" $http;
+done
