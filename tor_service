@@ -16,8 +16,8 @@ sudo apt install apt-transport-tor
 
 sudo apt-get update
 
-sudo apt-get install tor
 echo "======================================================="
-echo "Searching Tor Repos For Possible Packages To Install..."
+echo "Installing: Tor Tora Nyx Privoxy Torsocks Torify
+sudo apt-get install tor tora nyx privoxy torsocks torify
+echo "======================================================="
 
-sudo apt-cache search tor
