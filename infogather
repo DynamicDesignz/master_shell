@@ -1,0 +1,120 @@
+#!/bin/bash
+
+echo
+echo "Doing Info Gather Research..."
+echo
+LOG=/var/log/infogather
+
+touch $LOG
+echo "Log Location: $LOG"
+echo "" >> $LOG
+#while read for i in ip
+echo 
+echo -n "IP: "
+read ip
+
+while read $ip
+do 
+
+echo "Scan Live Hosts In Subnet........................................................." >> $LOG
+sudo nmap -sL -n $ip/24
+echo "" >> $LOG
+echo "DONE........................................................................" >> $LOG
+echo "" >> $LOG
+echo "" >> $LOG
+echo "==================================================================================" >> $LOG
+echo "					Running Nmap Suite				" >> $LOG
+echo "==================================================================================" >> $LOG
+#sudo nmap -sL $ip >> $LOG
+#sudo nmap -sn $ip >> $LOG
+echo "" >> $LOG
+echo "" >> $LOG
+echo "Live Hosts........................................................................" >> $LOG
+echo "" >> $LOG
+sudo nmap -Pn $ip >> $LOG 
+sudo nmap -sP $ip >> $LOG
+echo "" >> $LOG
+echo "" >> $LOG
+echo
+echo ".................................................................................." >> $LOG
+echo "" >> $LOG
+echo "" >> $LOG
+echo
+echo "Open Ports........................................................................" >> $LOG
+echo "" >> $LOG
+echo "OPEN PORTS" >> $LOG && sudo nmap -sS $ip >> $LOG
+echo "" >> $LOG
+echo ".................................................................................." >> $LOG
+echo "" >> $LOG
+echo "" >> $LOG
+echo
+echo "OS Version........................................................................" >> $LOG
+echo "" >> $LOG
+echo "OS Detection" && sudo nmap -O $ip >> $LOG
+echo "" >> $LOG
+echo "" >> $LOG
+echo
+echo "Services.........................................................................." >> $LOG
+echo "Service Detection" && sudo nmap -sV $ip >> $LOG
+echo "" >> $LOG
+echo "" >> $LOG
+echo "" >> $LOG
+echo "Vulnerability Scans..............................................................." >> $LOG
+sudo nmap -sV -sC $ip >> $LOG
+#sudo nmap -sV --script=vulscan/vulscan.nse $ip >> $LOG
+echo "" >> $LOG
+echo ".................................................................................." >> $LOG
+echo "" >> $LOG
+echo "" >> $LOG
+echo
+echo "Nmap Web Port 80 Scripts........................................................." >> $LOG
+echo "" >> $LOG
+sudo nmap -p 80 --script hostmap-bfk.nse $ip >> $LOG
+sudo nmap -p 80 --script dns-brute.nse $ip >> $LOG
+sudo nmap -p 80 --script http-csrf.nse $ip >> $LOG
+sudo nmap -p 80 --script http-stored-xss.nse $ip >> $LOG 
+#sudo nmap --script $ip >> $LOG
+echo "" >> $LOG
+echo "................................................................................." >> $LOG
+echo "" >> $LOG
+echo "" >> $LOG
+echo
+echo "Scan Firewall Detection.................................................................." >> $LOG
+echo "" >> $LOG
+sudo nmap -sA $ip >> $LOG
+sudo nmap -PN $ip >> $LOG
+sudo nmap -sN $ip >> $LOG
+sudo nmap -sF $ip >> $LOG
+echo "" >> $LOG
+echo ".................................................................................." >> $LOG
+echo "" >> $LOG
+echo "" >> $LOG
+echo "Nmap Script Services.............................................................." >> $LOG
+echo "" >> $LOG
+#sudo nmap -sV --script=ftp* $ip >> $LOG
+#sudo nmap -sV --script=ssh* $ip >> $LOG
+echo "DNS Brute Force" && sudo nmap -sV --script=http* $ip >> $LOG
+sudo nmap -sV --script=smb* $ip >> $LOG
+echo "" >> $LOGc
+echo ".................................................................................." >> $LOG
+echo "" >> $LOG
+echo "" >> $LOG
+echo
+echo "Creating Report Log" >> $LOG
+echo "" >> $LOG
+pandoc -s $LOG -o ~/Desktop/$LOG.pdf
+pandoc -s $LOG -o ~/Desktop/$LOG.xml
+pandoc -s $LOG -o ~/Desktop/$LOG.docx 
+pandoc -s $LOG -o ~/Desktop/$LOG.html
+echo "" >> $LOG
+
+echo "Created Log Reports ~/$LOG* "
+echo "" >> $LOG
+#firefox ~/LOG.html
+#libreoffice ~/LOG.docx
+
+#echo "Emailing Log Reports"
+#mail wacrochester@gmail.com << $LOG
+echo "....................................................." >> $LOG
+done;
+EOF
