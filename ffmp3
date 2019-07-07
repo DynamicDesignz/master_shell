@@ -1,0 +1,1 @@
+ffmpeg -i old.mp3 -acodec libmp3lame -ac 2 -ab 64k -ar 44100 new.mp3
