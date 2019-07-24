@@ -1,7 +1,8 @@
 #!/bin/bash
 echo "Wget ALL Webmin Modules"
-sleep 5
+echo
 echo "WARNING: This Wil Download 224 Plugins To Your /usr/share/webmin Directory! Please ensure that you want all of them..."
+sleep 5
 DIR=/usr/share/webmin/
 wget http://prdownloads.sourceforge.net/webadmin/webmin-1.920.tar.gz -o $DIR
 wget http://prdownloads.sourceforge.net/webadmin/webmin-1.920.pkg.gz -o $DIR
