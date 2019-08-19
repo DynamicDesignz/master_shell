@@ -1,0 +1,3 @@
+#!/bin/bash
+echo "Removing Archives"
+sudo rm -rf /var/cache/apt/archives/*

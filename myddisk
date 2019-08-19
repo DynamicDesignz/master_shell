@@ -1,0 +1,36 @@
+sudo apt-get install pv
+sudo dd if=/dev/sda bs=4096 count=2481920 conv=sync,noerror | pv -s 9G |sudo dd of=/dev/sdb
+
+
+
+
+#!/bin/bash
+echo "=========LEGEND================================"
+echo "Source=Ubuntu Disk Source"
+echo "Dest=USB Bootable Drive Destination"
+echo "ByteSize="
+echo "Count=Full Size Of Disk"
+echo "================================================"
+echo
+echo "=========LIST USB DEVICES======================="
+echo "USB: dmesg"
+echo "USB: lsblk"
+echo "================================================"
+
+echo "================================================="
+echo -n "Source: "
+read src
+echo -n "Dest: "
+read dst
+echo -n "ByteSize: "
+read bts
+echo -n "Count: "
+read cts
+sudo dd if=/dev/$src bs=$bts count=$cts of=/dev/$dst
+echo "sudo dd if=/dev/$src bs=$bts count=$cts of=/dev/$dst"
+
+count size does not need to be defined, keeps going until it takes up the entire disk...
+bytesize
+
+
+#sudo dd if=/dev/sda bs=4096 count=2481920 of=/dev/sdb

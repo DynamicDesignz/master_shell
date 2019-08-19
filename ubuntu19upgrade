@@ -1,0 +1,25 @@
+#!/bin/bash 
+
+sudo apt update && sudo apt dist-upgrade
+sudo apt install update-manager-core
+
+#sudo echo "Prompt=normal" >> /etc/update-manager/release-upgrades
+sed -i 's/Prompt=normal/Prompt=lts/g' /etc/update-manager/release-upgrades
+sudo sed -i 's/bionic/disco/g' /etc/apt/sources.list
+sudo sed -i 's/^/#/' /etc/apt/sources.list.d/*.list
+
+sudo apt update
+
+sudo apt upgrade
+
+sudo apt dist-upgrade
+
+sudo apt update --fix-missing
+
+sudo apt dist-upgrade
+
+sudo apt autoremove
+
+sudo apt clean
+
+lsb_release  -a
