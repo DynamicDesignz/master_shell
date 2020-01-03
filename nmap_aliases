@@ -1,0 +1,7 @@
+# Nmap Human Readable/Writable Commands For Easy Testing And Chaining!
+
+alias detectfirewall='sudo nmap -sA'
+alias firewallbypass='sudo nmap -pN'
+alias sneakysneaky='sudo nmap -sS'
+alias servicesversion='sudo nmap -sV'
+alias whoOS='sudo nmap -O'
