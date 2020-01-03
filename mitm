@@ -1,3 +1,0 @@
-#!/bin/bash
-
-sudo apt-get install arpon arpspoof mitmproxy ettercap-text-only sugarplum
