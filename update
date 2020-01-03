@@ -1,1 +1,1 @@
-alias update='sudo apt-get update'
+alias update='sudo apt update'
