@@ -1,6 +1,2 @@
-#!/bin/bash
- 
-echo -n "SHOW: ~$ "
-read text
-sudo apt-cache show $text
+alias show='sudo apt-cache show' 
 
