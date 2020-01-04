@@ -1,0 +1,13 @@
+#!/bin/bash
+while read url; do
+    # Echo URL to terminal
+    echo "${url}"
+    # Download files
+    wget -q "${url}"
+done < <(
+    # Get page
+    curl -s 'address-of-page-with-hyperlinks' | \
+    # Filter hyperlinks
+    grep -Po 'href="http://[^"]+\.(cdr|ai)"' | \
+    grep -Po 'http://[^"]+'
+)
