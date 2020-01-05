@@ -1,5 +1,1 @@
-#!/bin/bash
-
-echo -n "Purge Package: "
-read blow
-sudo apt-get purge $blow
+alias blowoff='sudo apt-get purge'  
