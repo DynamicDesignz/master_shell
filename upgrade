@@ -1,4 +1,1 @@
-#!/bin/bash
-
-sudo apt-get upgrade
-sudo apt-get autoremove
+alias update='sudo apt-get upgrade'
