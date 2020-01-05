@@ -1,4 +1,3 @@
 #!/bin/bash
 
-sudo apt-get autoremove
-
+alias autoremove='sudo apt-get autoremove'
