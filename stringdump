@@ -1,4 +1,0 @@
-#!/bin/bash
-echo -n "Search: "
-read dump
-sudo apt-cache search $dump | awk '{ print $1 } ' > $dump
