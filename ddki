@@ -1,3 +1,0 @@
-#!/bin/bash
-echo "Get Portieus Kiosk from Distrowatch and ddcopy to"
-dd if=dd if=Porteus-Kiosk-4.0.0-x86_64.iso of=/dev/sdb
