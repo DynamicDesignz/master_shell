@@ -1,6 +1,0 @@
-#!/bin/bash
-
-echo Dsniff is Listening on Network Interface: wlan0;
-
-sudo dsniff -i wlp4s0
-
