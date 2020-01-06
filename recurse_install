@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#while true; do 
+#echo
+#echo -n "Enter Youtube Playlist: "
+#read http
+#youtube-dl --extract-audio --audio-format mp3 -o "%(title)s.%(ext)s" $http;
+#done
+
+while true; do
+echo -n "Install: "
+read pkgs
+sudo apt install $pkgs
+done
