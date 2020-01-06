@@ -1,5 +1,22 @@
 alias='sudo chmod +x'
 
-arm() {
- sudo chmod +x
+#!/bin/bash
+function create(){
+ echo -n " create script:"
+ read create
+ sudo nano $create
+}
+function link () {
+ 
+}
+function arm() {
+ while true; do
+ sudo chmod +x $create
+ done
+}
+function execute() {
+ sudo ./$create
+}
+function log() {
+ #log creation
 }
