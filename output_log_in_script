@@ -1,0 +1,2 @@
+# output log in script file
+exec 1>/path/to/logfile 2>&1
