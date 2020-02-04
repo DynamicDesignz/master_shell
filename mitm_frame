@@ -1,12 +1,116 @@
 #!/bin/bash
-
-echo "MITM Framework Installer"
-
+echo
+echo "                                MITM Framework Installer                                              "
+echo
 sudo apt install nmap ettercap-text-only wireshark tshark sslstrip sslsplit sslsniff ssldump mitmproxy dsniff 
 
-echo "Password Sniffers & Crackers" 
 
+echo
+echo "Password Sniffers & Crackers" 
+echo
 sudo apt install hydra medusa ncrack hashcat
 
+
+echo
+echo "Ettercap Main Scripts"
+echo
+wget https://raw.githubusercontent.com/DynamicDesignz/master_shell/master/ettercap-all-arp.sh
+wget https://raw.githubusercontent.com/DynamicDesignz/master_shell/master/etterpoison
+
+
+
 echo "GitHub MITM Toolkit Installer"
+
+
+
+echo
+echo "Phishing Tools & Supporting MITM Tools"
+#for i in 4 do git clone
+echo
+
+wget https://raw.githubusercontent.com/DynamicDesignz/master_shell/master/phishX_install
+wget https://raw.githubusercontent.com/DynamicDesignz/master_shell/master/phisherman
+
+wget https://raw.githubusercontent.com/DynamicDesignz/master_shell/master/build_bettercap
+
+echo "High Profile Phishing Frameworks"
+git clone https://github.com/DynamicDesignz/gophish.git
+git clone https://github.com/DynamicDesignz/katphish-framework.git
+git clone https://github.com/Section9Labs/Cartero.git
+git clone https://github.com/DynamicDesignz/sociopath.git
+git clone https://github.com/DynamicDesignz/STP.git
+
+echo "SET...Social Engineering Toolkit"
+git clone https://github.com/DynamicDesignz/social-engineer-toolkit.git
+
+echo "New School Phishing Frameworks"
+git clone https://github.com/DynamicDesignz/Ninja-Phishing-Framework.git
+git clone https://github.com/DynamicDesignz/Dr0p1t-Framework.git
+git clone https://github.com/DynamicDesignz/HiddenEye.git
+git clone https://github.com/DynamicDesignz/nightmare.git
+git clone https://github.com/DynamicDesignz/blackeye.git
+git clone https://github.com/DynamicDesignz/dnstwist.git
+git clone https://github.com/DynamicDesignz/zarp.git
+git clone https://github.com/DynamicDesignz/ares.git
+git clone https://github.com/DynamicDesignz/ghost-phisher.git
+git clone https://github.com/DynamicDesignz/pompa.git
+git clone https://github.com/DynamicDesignz/BEWGor.git
+git clone https://github.com/DynamicDesignz/phishpoll.git
+
+git clone https://github.com/DynamicDesignz/social-engineering-toolkit-installer.git
+
+
+echo
+echo "Special Use MITM And Phishing Toolkits"
+echo
+git clone https://github.com/DynamicDesignz/Tool-X.git
+git clone https://github.com/DynamicDesignz/evilginx2.git
+git clone https://github.com/DynamicDesignz/SPFAbuse.git
+git clone https://github.com/DynamicDesignz/VECTR.git
+git clone https://github.com/DynamicDesignz/red-team-scripts.git
+git clone https://github.com/DynamicDesignz/WiFiBroot.git
+git clone https://github.com/DynamicDesignz/Lazymux.git
+git clone https://github.com/DynamicDesignz/Red-Team-Infrastructure.git
+git clone https://github.com/DynamicDesignz/RedTeam-Pentest-Cheatsheets.git
+git clone https://github.com/DynamicDesignz/Th3inspector.git
+git clone https://github.com/DynamicDesignz/reconspider.git
+git clone https://github.com/DynamicDesignz/IP-Biter.git
+git clone https://github.com/DynamicDesignz/dart.git
+git clone https://github.com/DynamicDesignz/rtl8812au.git
+git clone https://github.com/DynamicDesignz/cloud-dl.git
+git clone https://github.com/DynamicDesignz/RedCell-Kali.git
+git clone https://github.com/DynamicDesignz/cupp.git
+git clone https://github.com/DynamicDesignz/Subterfuge.git
+
+git clone https://github.com/DynamicDesignz/Net_Cracker.git
+git clone https://github.com/DynamicDesignz/invasit-network.git
+git clone https://github.com/DynamicDesignz/CeWL.git
+git clone https://github.com/DynamicDesignz/Wifi-Dumper.git
+
+
+
+git clone https://github.com/DynamicDesignz/CMSmap.git
+git clone https://github.com/DynamicDesignz/DorkNet.git
+git clone https://github.com/DynamicDesignz/red-team-tools.git
+git clone https://github.com/DynamicDesignz/Pukeko.git
+git clone https://github.com/DynamicDesignz/bopscrk
+git clone https://github.com/DynamicDesignz/Word-List-Generator.git
+git clone https://github.com/UndeadSec/GoblinWordGenerator.git
+
+git clone https://github.com/DynamicDesignz/wifimitm.git
+git clone https://github.com/DynamicDesignz/the-backdoor-factory.git
+
+
+git clone https://github.com/DynamicDesignz/ApacheGUI.git
+git clone https://github.com/DynamicDesignz/security-onion.git
+
+
+git clone https://github.com/DynamicDesignz/evilginx2.git
+
+git clone https://github.com/DynamicDesignz/wifimitm.git
+
+
+
+echo "Email Harvesting Tools"
+git clone https://github.com/DynamicDesignz/theHarvester.git
 
