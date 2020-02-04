@@ -68,6 +68,11 @@ sudo pip install -r requirements.txt
 echo "Installing Gnome Popup Terminal Dependencies" | sudo apt install rsplib-legacy-wrappers
 echo "Opening SocialFish Interface In New Terminal" | terminal -e cd /opt/SocialFish && sudo python SocialFish.py
 echo 
+echo
+cd /opt/
+echo "IMPLEMENTING SHELLFISH: Phishing Tool For 18 Social Media Sites" | cd /opt && sudo git clone https://github.com/thelinuxchoice/shellphish && cd shellphish
+terminal -e bash shellphish.sh
+echo 
 
 ###################################################################################################################
 
@@ -86,9 +91,7 @@ echo
 ###################################################################################################################
 
 echo
-echo "IMPLEMENTING WIFIPHISHER: Rogue Access Point Framework..." | sudo git clone https://github.com/wifiphisher/wifiphisher.git # Download the latest revision
-cd wifiphisher # Switch to tool's directory
-sudo python setup.py install # Install any dependencies
+echo "IMPLEMENTING WIFIPHISHER: Rogue Access Point Framework..." | sudo git clone https://github.com/wifiphisher/wifiphisher.git && cd wifiphisher && sudo python setup.py install # Install any dependencies
 echo
 echo "Opening WifiPhisher Documentation" | firefox https://github.com/wifiphisher/wifiphisher
 echo
@@ -111,26 +114,20 @@ echo "MITM-AP: Create Fake Access Point And Sniff Traffic" | sudo git clone http
 
 echo "MITM-Router: Man-in-the-middle wireless access point inside a docker container" | sudo git clone https://github.com/brannondorsey/mitm-router
 
+#############################################################################################################################
 
 
-
-
-
-
-echo "Optional Script Installers For: PhishX Phisherman"
-#wget https://raw.githubusercontent.com/DynamicDesignz/master_shell/master/phishX_install
-#wget https://raw.githubusercontent.com/DynamicDesignz/master_shell/master/phisherman
-
-
-
-
+echo
 echo "WARNING: ATTEMPTING AUTOMATIC SCRIPT BUILD OF BETTERCAP IN GO"
 sudo apt install golang
 cd /opt
 sudo git clone https://github.com/bettercap/bettercap.git && cd bettercap
+sudo wget https://raw.githubusercontent.com/DynamicDesignz/master_shell/master/bettercap_gui && cd bettercap_gui && cd ..
 sudo wget https://raw.githubusercontent.com/DynamicDesignz/master_shell/master/build_bettercap && sudo chmod +x build_bettercap
 sudo ./build_bettercap
-
+echo "                ...BetterCap With Golang And Source IMPLEMENTED with install script and BetterCap_GUI...              "
+echo "                                      IF YOU FUCKIN DARE ITS YOUR FUNERAL                                             "
+echo
 
 #############################################################################################################################
 echo
@@ -198,21 +195,19 @@ git clone https://github.com/DynamicDesignz/Pukeko.git
 
 
 
-echo "IMPLEMENTING SHELLFISH: Phishing Tool For 18 Social Media Sites"
-git clone https://github.com/thelinuxchoice/shellphish
-cd shellphish
-bash shellphish.sh
-
 
 
 ## IMPLEMENT INFERENCE GATHERING PEOPLE SEARCH AND PROFILING TOOLS FOR PRETEXTING PERSONAL INFO TO AID IN PHISHING ATTACKS  ##
 
 
 echo "Email Harvesting Tools"
-git clone https://github.com/DynamicDesignz/theHarvester.git
-#jigsaw.rb email harvester
-#emap-harvest script from own repo file
+echo "theHarvester" | cd /opt && sudo git clone https://github.com/DynamicDesignz/theHarvester.git
 
+#jigsaw.rb email harvester
+
+echo "Nmap Email Harvest"
+cd /usr/local/bin && sudo wget https://raw.githubusercontent.com/DynamicDesignz/master_shell/master/emap-harvest && sudo chmod +x *
+terminal -e sudo emap-harvest
 
 
 ################################################################################################################
@@ -240,8 +235,10 @@ echo "PC Credz: " | sudo git clone https://github.com/DynamicDesignz/PCredz.git
 echo "CARD PWN: " | sudo git clone https://github.com/DynamicDesignz/CardPwn.git
 echo
 
-done
-exit 0
-
+echo
 echo "Black Arch Repository For Network Sniffers"
 firefox https://blackarch.org/sniffer.html
+echo
+
+done
+exit 0
