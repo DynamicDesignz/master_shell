@@ -6,6 +6,9 @@ echo "Implementing Ubuntu Based MITM Attack Tools And Sniffing Repository Packag
 sudo apt install nmap ettercap-text-only wireshark tshark sslstrip sslsplit sslsniff ssldump mitmproxy dsniff 
 
 
+cd /usr/local/bin && sudo wget https://raw.githubusercontent.com/DynamicDesignz/master_shell/master/enableipvforwarding && sudo chmod +x *
+
+
 echo
 echo "Password Sniffers & Crackers" 
 echo
@@ -15,10 +18,11 @@ sudo apt install hydra medusa ncrack hashcat xhydra
 echo
 echo "Ettercap Main Scripts"
 echo
+cd /usr/local/bin
 wget https://raw.githubusercontent.com/DynamicDesignz/master_shell/master/etterpoison
 wget https://raw.githubusercontent.com/DynamicDesignz/master_shell/master/etter-script
 wget https://raw.githubusercontent.com/DynamicDesignz/master_shell/master/ettercap-all-arp.sh
-
+sudo chmod +x *
 
 
 
@@ -31,12 +35,22 @@ echo "Phishing Tools & Supporting MITM Tools"
 #for i in 4 do git clone
 echo
 #### GoPhish KingPhisher SET Ghost-Phisher Wi ###
-git clone https://github.com/DynamicDesignz/gophish.git
+cd /opt
+sudo git clone https://github.com/DynamicDesignz/gophish.git
 
+
+echo "SET...Social Engineering Toolkit"
+git clone https://github.com/DynamicDesignz/social-engineer-toolkit.git
+
+
+echo "High Profile Phishing Tools"
+sudo git clone https://github.com/DynamicDesignz/evilginx2.git
+
+
+########################################################################################
 
 wget https://raw.githubusercontent.com/DynamicDesignz/master_shell/master/phishX_install
 wget https://raw.githubusercontent.com/DynamicDesignz/master_shell/master/phisherman
-
 wget https://raw.githubusercontent.com/DynamicDesignz/master_shell/master/build_bettercap
 
 
@@ -46,8 +60,7 @@ git clone https://github.com/Section9Labs/Cartero.git
 git clone https://github.com/DynamicDesignz/sociopath.git
 git clone https://github.com/DynamicDesignz/STP.git
 
-echo "SET...Social Engineering Toolkit"
-git clone https://github.com/DynamicDesignz/social-engineer-toolkit.git
+
 
 echo "New School Phishing Frameworks"
 git clone https://github.com/DynamicDesignz/Ninja-Phishing-Framework.git
