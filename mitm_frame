@@ -39,9 +39,13 @@ cd /opt
 sudo git clone https://github.com/DynamicDesignz/gophish.git
 
 
-echo "SET...Social Engineering Toolkit"
-git clone https://github.com/DynamicDesignz/social-engineer-toolkit.git
+sudo apt install aircrack-ng python-scapy python-qt4 python subversion xterm 
+sudo git clone https://github.com/savio-code/ghost-phisher.git
 
+
+echo "SET...Social Engineering Toolkit"
+sudo git clone https://github.com/DynamicDesignz/social-engineer-toolkit.git
+sudo git clone https://github.com/DynamicDesignz/social-engineering-toolkit-installer.git
 
 echo "High Profile Phishing Tools"
 sudo git clone https://github.com/DynamicDesignz/evilginx2.git
@@ -69,14 +73,14 @@ git clone https://github.com/DynamicDesignz/HiddenEye.git
 git clone https://github.com/DynamicDesignz/nightmare.git
 git clone https://github.com/DynamicDesignz/blackeye.git
 git clone https://github.com/DynamicDesignz/dnstwist.git
-git clone https://github.com/DynamicDesignz/zarp.git
+
 git clone https://github.com/DynamicDesignz/ares.git
 git clone https://github.com/DynamicDesignz/ghost-phisher.git
 git clone https://github.com/DynamicDesignz/pompa.git
 git clone https://github.com/DynamicDesignz/BEWGor.git
 git clone https://github.com/DynamicDesignz/phishpoll.git
 
-git clone https://github.com/DynamicDesignz/social-engineering-toolkit-installer.git
+
 
 
 echo
