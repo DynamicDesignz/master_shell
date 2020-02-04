@@ -136,8 +136,9 @@ git clone https://github.com/DynamicDesignz/wifimitm.git
 
 echo "Email Harvesting Tools"
 git clone https://github.com/DynamicDesignz/theHarvester.git
+#emap-harvest 
 
-
+echo
 
 echo "          MITM2SSL ATTACK SCRIPT       "
 echo
@@ -151,4 +152,6 @@ echo "Monitoring SSLdump Log Live For Site Login Passwords" | watch -n 0,2 sslst
 echo
 echo "EtterSSL: Ettercap & SSLstrip Package" | cd /opt && sudo git clone https://github.com/DynamicDesignz/Ettercap-and-sslstrip.git
 echo
-
+echo
+echo "TCPdump Password Sniffer" | cd /usr/local/bin && sudo wget https://raw.githubusercontent.com/DynamicDesignz/master_shell/master/tcppasssniff
+echo
