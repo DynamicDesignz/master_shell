@@ -60,6 +60,6 @@ curl -s https://api.wordpress.org/secret-key/1.1/salt/
 
 sudo gedit /var/www/html/wordpress/wp-config.php
 
-
-firefox http://localhost
+echo "Opening Wordpress Stage And PHPMyAdmin Panel On Firefox"
+firefox http://localhost/wordpress
 firefox http://localhost/phpmyadmin
