@@ -24,25 +24,22 @@ cd /usr/local/bin
 wget https://raw.githubusercontent.com/DynamicDesignz/master_shell/master/etterpoison
 wget https://raw.githubusercontent.com/DynamicDesignz/master_shell/master/etter-script
 wget https://raw.githubusercontent.com/DynamicDesignz/master_shell/master/ettercap-all-arp.sh
-
-
+echo
 wget https://github.com/DynamicDesignz/kali-linux-repo/blob/master/dsniff-passwds.sh
 wget https://github.com/DynamicDesignz/kali-linux-repo/blob/master/etterpass
 wget https://github.com/DynamicDesignz/kali-linux-repo/blob/master/dumpwebspy
 wget https://github.com/DynamicDesignz/kali-linux-repo/blob/master/webspy
 wget https://github.com/DynamicDesignz/kali-linux-repo/blob/master/urlsnarf.sh
 wget https://github.com/DynamicDesignz/kali-linux-repo/blob/master/filesnarf.sh
-
 echo
 echo "ARMED SCRIPTS!" | cd /usr/local/bin && sudo chmod +x *
 echo 
+echo
 
-
+echo "STAGE 1" | sleep 1
 echo
 echo "Phishing Tools & Supporting MITM Tools"
-#for i in 4 do git clone
 echo
-#### GoPhish KingPhisher SET Ghost-Phisher Wi ###
 cd /opt
 echo "Installing GoPhish" | sudo git clone https://github.com/DynamicDesignz/gophish.git
 echo
@@ -57,54 +54,65 @@ echo
 echo "Installing SocialFish..." | sudo git clone https://github.com/UndeadSec/SocialFish.git
 firefox https://n0where.net/ultimate-phishing-tool-with-ngrok-integrated-socialfish
 echo
-cd SocialFish
+cd /opt/SocialFish
 sudo pip install -r requirements.txt
 echo "Installing Gnome Popup Terminal Dependencies" | sudo apt install rsplib-legacy-wrappers
 echo "Opening SocialFish Interface In New Terminal" | terminal -e cd /opt/SocialFish && sudo python SocialFish.py
 echo 
 
-echo "STAGE 2" | sleep 1
+echo "STAGE 2" | sleep 1 && cd /opt
 
 echo
 echo "High Profile Phishing Tools"
 echo
 echo "Installing EvilGinx2: EvilRogueAP with 2FA" | sudo git clone https://github.com/DynamicDesignz/evilginx2.git
+echo
 echo "Installing FiercePhish Framework" | sudo git clone https://github.com/Raikia/FiercePhish.git
 firefox https://github.com/Raikia/FiercePhish
 echo
-echo "High Profile Man-In-The-Middle Frameworks"
-echo
-echo "Installing XeroSploit MITM Seemless Framework" | sudo git clone https://github.com/LionSec/xerosploit.git
 echo
 
 ########################################################################################
 echo "                  OPTIONAL SWAP PACKAGES....          "
+echo
+echo "STAGE 3" | sleep 1 && cd /opt
+echo
 
-sudo git clone https://github.com/wifiphisher/wifiphisher.git
+echo "ApeX: Social Engineer Wifi Passwords" | sudo git clone https://github.com/Pure-L0G1C/ApeX.git
+
+echo "WifiMITM: " | sudo git clone https://github.com/mvondracek/wifimitm.git
 
 
-git clone https://github.com/wifiphisher/wifiphisher.git # Download the latest revision
+echo
+echo "IMPLEMENTING WIFIPHISHER: Rogue Access Point Framework..."
+sudo git clone https://github.com/wifiphisher/wifiphisher.git # Download the latest revision
 cd wifiphisher # Switch to tool's directory
 sudo python setup.py install # Install any dependencies
-
-#sudo git clone https://github.com/mvondracek/wifimitm.git
-
-wget https://raw.githubusercontent.com/DynamicDesignz/master_shell/master/phishX_install
-wget https://raw.githubusercontent.com/DynamicDesignz/master_shell/master/phisherman
-wget https://raw.githubusercontent.com/DynamicDesignz/master_shell/master/build_bettercap
-
-
-
-git clone https://github.com/DynamicDesignz/katphish-framework.git
-git clone https://github.com/Section9Labs/Cartero.git
-git clone https://github.com/DynamicDesignz/sociopath.git
-git clone https://github.com/DynamicDesignz/STP.git
+echo
+echo "Opening WifiPhisher Documentation" | firefox https://github.com/wifiphisher/wifiphisher
+echo
+echo "Running WiFiPhisher Interface In Popup Terminal"
+terminal -e cd /opt/wifiphisher && sudo wifiphisher -aI enp0s3 -jI wlan4 -p firmware-upgrade --handshake-capture handshake.pcap
 
 
 
-echo "New School Phishing Frameworks"
+
+
+echo "Optional Script Installers For: PhishX Phisherman BuildBetterCap"
+#wget https://raw.githubusercontent.com/DynamicDesignz/master_shell/master/phishX_install
+#wget https://raw.githubusercontent.com/DynamicDesignz/master_shell/master/phisherman
+#wget https://raw.githubusercontent.com/DynamicDesignz/master_shell/master/build_bettercap
+
+
+
+
+
+
+echo "New School Phishing Frameworks"    
+      #PROFILE AND TEST ONLY USEFUL TOOLS IN WORKING ORDER DEPRECATE THE REST!
+
 git clone https://github.com/DynamicDesignz/Ninja-Phishing-Framework.git
-git clone https://github.com/DynamicDesignz/Dr0p1t-Framework.git
+
 git clone https://github.com/DynamicDesignz/HiddenEye.git
 git clone https://github.com/DynamicDesignz/nightmare.git
 git clone https://github.com/DynamicDesignz/blackeye.git
@@ -116,14 +124,17 @@ git clone https://github.com/DynamicDesignz/pompa.git
 git clone https://github.com/DynamicDesignz/BEWGor.git
 git clone https://github.com/DynamicDesignz/phishpoll.git
 
-
+git clone https://github.com/DynamicDesignz/katphish-framework.git
+git clone https://github.com/Section9Labs/Cartero.git
+git clone https://github.com/DynamicDesignz/sociopath.git
+git clone https://github.com/DynamicDesignz/STP.git
 
 
 echo
 echo "Special Use MITM And Phishing Toolkits"
 echo
 git clone https://github.com/DynamicDesignz/Tool-X.git
-git clone https://github.com/DynamicDesignz/evilginx2.git
+#git clone https://github.com/DynamicDesignz/evilginx2.git
 git clone https://github.com/DynamicDesignz/SPFAbuse.git
 git clone https://github.com/DynamicDesignz/VECTR.git
 git clone https://github.com/DynamicDesignz/red-team-scripts.git
@@ -138,58 +149,28 @@ git clone https://github.com/DynamicDesignz/dart.git
 git clone https://github.com/DynamicDesignz/rtl8812au.git
 git clone https://github.com/DynamicDesignz/cloud-dl.git
 git clone https://github.com/DynamicDesignz/RedCell-Kali.git
-git clone https://github.com/DynamicDesignz/cupp.git
-git clone https://github.com/DynamicDesignz/Subterfuge.git
+
 
 git clone https://github.com/DynamicDesignz/Net_Cracker.git
 git clone https://github.com/DynamicDesignz/invasit-network.git
-git clone https://github.com/DynamicDesignz/CeWL.git
 git clone https://github.com/DynamicDesignz/Wifi-Dumper.git
 
 
 
-git clone https://github.com/DynamicDesignz/CMSmap.git
+#git clone https://github.com/DynamicDesignz/CMSmap.git
 git clone https://github.com/DynamicDesignz/DorkNet.git
-git clone https://github.com/DynamicDesignz/red-team-tools.git
+#git clone https://github.com/DynamicDesignz/red-team-tools.git
 git clone https://github.com/DynamicDesignz/Pukeko.git
-git clone https://github.com/DynamicDesignz/bopscrk
-git clone https://github.com/DynamicDesignz/Word-List-Generator.git
-git clone https://github.com/UndeadSec/GoblinWordGenerator.git
+#git clone https://github.com/DynamicDesignz/bopscrk
+#git clone https://github.com/DynamicDesignz/Word-List-Generator.git
+#git clone https://github.com/UndeadSec/GoblinWordGenerator.git
 
-git clone https://github.com/DynamicDesignz/wifimitm.git
-git clone https://github.com/DynamicDesignz/the-backdoor-factory.git
-
-
-git clone https://github.com/DynamicDesignz/ApacheGUI.git
-git clone https://github.com/DynamicDesignz/security-onion.git
-
-
-git clone https://github.com/DynamicDesignz/evilginx2.git
-
-git clone https://github.com/DynamicDesignz/wifimitm.git
+###git clone https://github.com/DynamicDesignz/security-onion.git
 
 
 
 
-
-
-################################################################################################################
-git clone https://github.com/LionSec/xerosploit
-cd xerosploit && sudo python install.py
-sudo xerosploit
-
-echo "Phishing Tool For 18 Social Media Sites"
-git clone https://github.com/thelinuxchoice/shellphish
-cd shellphish
-bash shellphish.sh
-
-
-echo "Email Harvesting Tools"
-git clone https://github.com/DynamicDesignz/theHarvester.git
-#emap-harvest 
-
-echo
-
+#### IMPLEMENT INTO OWN SCRIPT IN MASTER SHELL
 echo "          MITM2SSL ATTACK SCRIPT       "
 echo
 echo "MITM Over SSL - Sniffing Out Passeords Over SSL"
@@ -206,4 +187,32 @@ echo
 echo "TCPdump Password Sniffer" | cd /usr/local/bin && sudo wget https://raw.githubusercontent.com/DynamicDesignz/master_shell/master/tcppasssniff
 echo
 
-#sniffer list https://blackarch.org/sniffer.html
+
+
+
+
+################################################################################################################
+
+#echo "High Profile Man-In-The-Middle Frameworks"
+#echo
+#echo "Installing XeroSploit MITM Seemless Framework" | sudo git clone https://github.com/LionSec/xerosploit.git
+#echo
+
+
+echo "IMPLEMENTING XEROSPLOIT" | sudo git clone https://github.com/LionSec/xerosploit
+cd xerosploit && sudo python install.py
+sudo xerosploit
+
+echo "IMPLEMENTING SHELLFISH: Phishing Tool For 18 Social Media Sites"
+git clone https://github.com/thelinuxchoice/shellphish
+cd shellphish
+bash shellphish.sh
+
+
+echo "Email Harvesting Tools"
+git clone https://github.com/DynamicDesignz/theHarvester.git
+#jigsaw.rb email harvester
+#emap-harvest script from own repo file
+
+echo "Black Arch Repository For Network Sniffers"
+firefox https://blackarch.org/sniffer.html
