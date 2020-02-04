@@ -67,13 +67,27 @@ echo "STAGE 2" | sleep 1
 
 echo
 echo "High Profile Phishing Tools"
+echo
 echo "Installing EvilGinx2: EvilRogueAP with 2FA" | sudo git clone https://github.com/DynamicDesignz/evilginx2.git
+echo "Installing FiercePhish Framework" | sudo git clone https://github.com/Raikia/FiercePhish.git
+firefox https://github.com/Raikia/FiercePhish
 echo
 echo "High Profile Man-In-The-Middle Frameworks"
+echo
 echo "Installing XeroSploit MITM Seemless Framework" | sudo git clone https://github.com/LionSec/xerosploit.git
 echo
 
 ########################################################################################
+echo "                  OPTIONAL SWAP PACKAGES....          "
+
+sudo git clone https://github.com/wifiphisher/wifiphisher.git
+
+
+git clone https://github.com/wifiphisher/wifiphisher.git # Download the latest revision
+cd wifiphisher # Switch to tool's directory
+sudo python setup.py install # Install any dependencies
+
+#sudo git clone https://github.com/mvondracek/wifimitm.git
 
 wget https://raw.githubusercontent.com/DynamicDesignz/master_shell/master/phishX_install
 wget https://raw.githubusercontent.com/DynamicDesignz/master_shell/master/phisherman
@@ -155,9 +169,19 @@ git clone https://github.com/DynamicDesignz/evilginx2.git
 git clone https://github.com/DynamicDesignz/wifimitm.git
 
 
+
+
+
+
+################################################################################################################
 git clone https://github.com/LionSec/xerosploit
 cd xerosploit && sudo python install.py
 sudo xerosploit
+
+echo "Phishing Tool For 18 Social Media Sites"
+git clone https://github.com/thelinuxchoice/shellphish
+cd shellphish
+bash shellphish.sh
 
 
 echo "Email Harvesting Tools"
