@@ -2,20 +2,23 @@
 echo
 echo "                                MITM Framework Installer                                              "
 echo
+echo "Implementing Ubuntu Based MITM Attack Tools And Sniffing Repository Packages"
 sudo apt install nmap ettercap-text-only wireshark tshark sslstrip sslsplit sslsniff ssldump mitmproxy dsniff 
 
 
 echo
 echo "Password Sniffers & Crackers" 
 echo
-sudo apt install hydra medusa ncrack hashcat
+sudo apt install hydra medusa ncrack hashcat xhydra 
 
 
 echo
 echo "Ettercap Main Scripts"
 echo
-wget https://raw.githubusercontent.com/DynamicDesignz/master_shell/master/ettercap-all-arp.sh
 wget https://raw.githubusercontent.com/DynamicDesignz/master_shell/master/etterpoison
+wget https://raw.githubusercontent.com/DynamicDesignz/master_shell/master/etter-script
+wget https://raw.githubusercontent.com/DynamicDesignz/master_shell/master/ettercap-all-arp.sh
+
 
 
 
@@ -27,14 +30,17 @@ echo
 echo "Phishing Tools & Supporting MITM Tools"
 #for i in 4 do git clone
 echo
+#### GoPhish KingPhisher SET Ghost-Phisher Wi ###
+git clone https://github.com/DynamicDesignz/gophish.git
+
 
 wget https://raw.githubusercontent.com/DynamicDesignz/master_shell/master/phishX_install
 wget https://raw.githubusercontent.com/DynamicDesignz/master_shell/master/phisherman
 
 wget https://raw.githubusercontent.com/DynamicDesignz/master_shell/master/build_bettercap
 
-echo "High Profile Phishing Frameworks"
-git clone https://github.com/DynamicDesignz/gophish.git
+
+
 git clone https://github.com/DynamicDesignz/katphish-framework.git
 git clone https://github.com/Section9Labs/Cartero.git
 git clone https://github.com/DynamicDesignz/sociopath.git
