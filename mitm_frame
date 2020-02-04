@@ -28,6 +28,7 @@ sudo chmod +x *
 
 echo "GitHub MITM Toolkit Installer"
 
+sudo git clone https://github.com/LionSec/xerosploit.git
 
 
 echo
@@ -155,3 +156,5 @@ echo
 echo
 echo "TCPdump Password Sniffer" | cd /usr/local/bin && sudo wget https://raw.githubusercontent.com/DynamicDesignz/master_shell/master/tcppasssniff
 echo
+
+#sniffer list https://blackarch.org/sniffer.html
