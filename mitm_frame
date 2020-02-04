@@ -134,6 +134,10 @@ git clone https://github.com/DynamicDesignz/evilginx2.git
 git clone https://github.com/DynamicDesignz/wifimitm.git
 
 
+git clone https://github.com/LionSec/xerosploit
+cd xerosploit && sudo python install.py
+sudo xerosploit
+
 
 echo "Email Harvesting Tools"
 git clone https://github.com/DynamicDesignz/theHarvester.git
