@@ -1,0 +1,3 @@
+#!/bin/bash
+echo "Remove Package Deafaults"
+sudo apt-get remove thunderbird rhythmbox libreoffice* 
