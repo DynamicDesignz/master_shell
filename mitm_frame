@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo "MITM Framework Installer"
+
+sudo apt install nmap ettercap-text-only wireshark tshark sslstrip sslsplit sslsniff ssldump mitmproxy dsniff 
+
+echo "Password Sniffers & Crackers" 
+
+sudo apt install hydra medusa ncrack hashcat
+
+echo "GitHub MITM Toolkit Installer"
+
