@@ -1,0 +1,3 @@
+sudo git clone https://github.com/LionSec/katoolin.git
+Copy the katoolin executable to the proper directory with the command sudo cp katoolin/katoolin.py /usr/bin/katoolin
+Give the executable proper permissions with sudo chmod ugo+x /usr/bin/katoolin
