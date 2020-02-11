@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#FULL LIST OF FOR LOOPS MAGIC
+
+for f in *.mhtml
+do
+lowriter --headless --convert-to pdf "$f"
+done
+
+
+
+for file in *html
+do 
+html2pdf "$file"
+done
