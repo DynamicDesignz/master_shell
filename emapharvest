@@ -2,5 +2,4 @@
 
 echo "Email Harvest"
 read host
-
-nmap --script=http-email-harvest $host
+sudo nmap --script=http-email-harvest $host
