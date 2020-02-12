@@ -1,4 +1,0 @@
-#!/bin/bash
-echo -n "URL: "
-read url
-wget -r -A "*.ai,*.cdr" '$url'
