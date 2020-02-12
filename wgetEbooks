@@ -1,3 +1,7 @@
+#!/bin/bash
+echo "======================================"
+echo "SCRAPING LIST OF SYSTEMS DOCUMENTATION"
+echo "======================================"
 wget http://www.mediafire.com/download/u2akquvibe6ia13/Hackers+High+School+13+Complete+Hacking+E-books.rar
 wget http://www.mediafire.com/download/u2akquvibe6ia13/Hackers+High+School+13+Complete+Hacking+E-books.rar
 wget http://www.mediafire.com/download/dyewn6f3r3olnuw/A+Beginners+Guide+To+Hacking+Computer+Systems.zip
