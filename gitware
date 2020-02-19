@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo " GonnaGitWar - Malware Download Script"
+
+git clone https://github.com/tarcisio-marinho/GonnaCry.git
+git clone https://github.com/greg5678/Malware-Samples.git
+git clone https://github.com/M4sc3r4n0/Evil-Droid.git
+
+
+wget http://download1827.mediafire.com/9l98vojd25pg/b8yybo2n31a8bqb/NanoCore+1.2.2.0.rar
+unrar NanoCore*.rar
