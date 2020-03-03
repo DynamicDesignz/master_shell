@@ -1,2 +1,0 @@
-#!/bin/bash
-perl /usr/share/Th3inspector/Th3inspector.pl ${1+"$@"}
