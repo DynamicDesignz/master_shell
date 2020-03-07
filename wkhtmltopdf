@@ -1,0 +1,9 @@
+#!/bin/bash
+sudo apt install wkhtmltopdf
+echo
+echo "USAGE:" "wkhtmltopdf <webpage> <destination-pdf-file>"
+echo "wkhtmltopdf https://computingforgeeks.com computingforgeeks.pdf"
+echo
+echo "sudo ln -s /usr/local/bin/wkhtmltopdf /usr/bin"
+
+echo "alias url2pdf='wkhtmltopdf'" >> ~/.bashrc & source ~/.bashrc
