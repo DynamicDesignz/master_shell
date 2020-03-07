@@ -1,5 +1,0 @@
-alias dosflood='sudo hping3 -c 1000000 -d 65000 -S -w 64 -p 21 --flood' 
-
-
-
-
