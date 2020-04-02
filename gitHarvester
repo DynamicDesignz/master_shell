@@ -1,0 +1,10 @@
+#!/bin/bash
+echo "Installing theHarvester from git"
+sudo apt install git
+cd /opt
+sudo git clone https://github.com/laramies/theHarvester.git
+cd /opt/the*
+sudo apt install python3-pip
+python3 -m pip install pipenv
+pip3 install -r requirements.txt
+./the*.py
